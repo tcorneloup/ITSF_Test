@@ -1,0 +1,1534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.itsf.test.SubscriptionControllerTest" time="14.913" tests="15" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/runner/work/ITSF_Test/ITSF_Test/target/test-classes:/home/runner/work/ITSF_Test/ITSF_Test/target/classes:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.3/spring-boot-starter-web-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.3/spring-boot-starter-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot/3.2.3/spring-boot-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.3/spring-boot-autoconfigure-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.3/spring-boot-starter-logging-3.2.3.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/runner/.m2/repository/org/slf4j/jul-to-slf4j/2.0.12/jul-to-slf4j-2.0.12.jar:/home/runner/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/runner/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.3/spring-boot-starter-json-3.2.3.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.4/jackson-databind-2.15.4.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.4/jackson-annotations-2.15.4.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.4/jackson-core-2.15.4.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.4/jackson-datatype-jdk8-2.15.4.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.4/jackson-datatype-jsr310-2.15.4.jar:/home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.4/jackson-module-parameter-names-2.15.4.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.3/spring-boot-starter-tomcat-3.2.3.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.19/tomcat-embed-core-10.1.19.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.19/tomcat-embed-websocket-10.1.19.jar:/home/runner/.m2/repository/org/springframework/spring-web/6.1.4/spring-web-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-beans/6.1.4/spring-beans-6.1.4.jar:/home/runner/.m2/repository/io/micrometer/micrometer-observation/1.12.3/micrometer-observation-1.12.3.jar:/home/runner/.m2/repository/io/micrometer/micrometer-commons/1.12.3/micrometer-commons-1.12.3.jar:/home/runner/.m2/repository/org/springframework/spring-webmvc/6.1.4/spring-webmvc-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-aop/6.1.4/spring-aop-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-context/6.1.4/spring-context-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-expression/6.1.4/spring-expression-6.1.4.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.3/spring-boot-starter-data-jpa-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.3/spring-boot-starter-aop-3.2.3.jar:/home/runner/.m2/repository/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.3/spring-boot-starter-jdbc-3.2.3.jar:/home/runner/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/runner/.m2/repository/org/springframework/spring-jdbc/6.1.4/spring-jdbc-6.1.4.jar:/home/runner/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/home/runner/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/runner/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/runner/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/runner/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/runner/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/runner/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/home/runner/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/home/runner/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/home/runner/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/home/runner/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/home/runner/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/runner/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/runner/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/runner/.m2/repository/org/springframework/data/spring-data-jpa/3.2.3/spring-data-jpa-3.2.3.jar:/home/runner/.m2/repository/org/springframework/data/spring-data-commons/3.2.3/spring-data-commons-3.2.3.jar:/home/runner/.m2/repository/org/springframework/spring-orm/6.1.4/spring-orm-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-tx/6.1.4/spring-tx-6.1.4.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/home/runner/.m2/repository/org/springframework/spring-aspects/6.1.4/spring-aspects-6.1.4.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.3/spring-boot-starter-validation-3.2.3.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.19/tomcat-embed-el-10.1.19.jar:/home/runner/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/runner/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/runner/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.3/spring-boot-starter-test-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-test/3.2.3/spring-boot-test-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.3/spring-boot-test-autoconfigure-3.2.3.jar:/home/runner/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/runner/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/runner/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/runner/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/runner/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/runner/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/runner/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/runner/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/runner/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/runner/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/home/runner/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/runner/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/home/runner/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/runner/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/runner/.m2/repository/org/springframework/spring-core/6.1.4/spring-core-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-jcl/6.1.4/spring-jcl-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-test/6.1.4/spring-test-6.1.4.jar:/home/runner/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/runner/work/ITSF_Test/ITSF_Test/target/surefire/surefirebooter-20260320115737000_3.jar /home/runner/work/ITSF_Test/ITSF_Test/target/surefire 2026-03-20T11-57-36_903-jvmRun1 surefire-20260320115737000_1tmp surefire_0-20260320115737000_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/runner/work/ITSF_Test/ITSF_Test/target/test-classes:/home/runner/work/ITSF_Test/ITSF_Test/target/classes:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.3/spring-boot-starter-web-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.3/spring-boot-starter-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot/3.2.3/spring-boot-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.3/spring-boot-autoconfigure-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.3/spring-boot-starter-logging-3.2.3.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/runner/.m2/repository/org/slf4j/jul-to-slf4j/2.0.12/jul-to-slf4j-2.0.12.jar:/home/runner/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/runner/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.3/spring-boot-starter-json-3.2.3.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.4/jackson-databind-2.15.4.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.4/jackson-annotations-2.15.4.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.4/jackson-core-2.15.4.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.4/jackson-datatype-jdk8-2.15.4.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.4/jackson-datatype-jsr310-2.15.4.jar:/home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.4/jackson-module-parameter-names-2.15.4.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.3/spring-boot-starter-tomcat-3.2.3.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.19/tomcat-embed-core-10.1.19.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.19/tomcat-embed-websocket-10.1.19.jar:/home/runner/.m2/repository/org/springframework/spring-web/6.1.4/spring-web-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-beans/6.1.4/spring-beans-6.1.4.jar:/home/runner/.m2/repository/io/micrometer/micrometer-observation/1.12.3/micrometer-observation-1.12.3.jar:/home/runner/.m2/repository/io/micrometer/micrometer-commons/1.12.3/micrometer-commons-1.12.3.jar:/home/runner/.m2/repository/org/springframework/spring-webmvc/6.1.4/spring-webmvc-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-aop/6.1.4/spring-aop-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-context/6.1.4/spring-context-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-expression/6.1.4/spring-expression-6.1.4.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.3/spring-boot-starter-data-jpa-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.3/spring-boot-starter-aop-3.2.3.jar:/home/runner/.m2/repository/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.3/spring-boot-starter-jdbc-3.2.3.jar:/home/runner/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/runner/.m2/repository/org/springframework/spring-jdbc/6.1.4/spring-jdbc-6.1.4.jar:/home/runner/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/home/runner/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/runner/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/runner/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/runner/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/runner/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/runner/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/home/runner/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/home/runner/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/home/runner/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/home/runner/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/home/runner/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/runner/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/runner/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/runner/.m2/repository/org/springframework/data/spring-data-jpa/3.2.3/spring-data-jpa-3.2.3.jar:/home/runner/.m2/repository/org/springframework/data/spring-data-commons/3.2.3/spring-data-commons-3.2.3.jar:/home/runner/.m2/repository/org/springframework/spring-orm/6.1.4/spring-orm-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-tx/6.1.4/spring-tx-6.1.4.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/home/runner/.m2/repository/org/springframework/spring-aspects/6.1.4/spring-aspects-6.1.4.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.3/spring-boot-starter-validation-3.2.3.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.19/tomcat-embed-el-10.1.19.jar:/home/runner/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/runner/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/runner/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.3/spring-boot-starter-test-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-test/3.2.3/spring-boot-test-3.2.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.3/spring-boot-test-autoconfigure-3.2.3.jar:/home/runner/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/runner/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/runner/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/runner/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/runner/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/runner/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/runner/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/runner/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/runner/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/runner/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/home/runner/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/runner/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/home/runner/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/runner/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/runner/.m2/repository/org/springframework/spring-core/6.1.4/spring-core-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-jcl/6.1.4/spring-jcl-6.1.4.jar:/home/runner/.m2/repository/org/springframework/spring-test/6.1.4/spring-test-6.1.4.jar:/home/runner/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/runner"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="/usr/lib/jvm/temurin-17-jdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/runner/work/ITSF_Test/ITSF_Test"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/ITSF_Test/ITSF_Test/target/surefire/surefirebooter-20260320115737000_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.18+8"/>
+    <property name="user.name" value="runner"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.14.0-1017-azure"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.18+8"/>
+    <property name="localRepository" value="/home/runner/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="com.zaxxer.hikari.pool_number" value="15"/>
+    <property name="java.version" value="17.0.18"/>
+    <property name="user.dir" value="/home/runner/work/ITSF_Test/ITSF_Test"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="4468"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.18+8"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[itsf-test] "/>
+  </properties>
+  <testcase name="addRoaming_toMobileSubscription_shouldSucceed" classname="com.itsf.test.SubscriptionControllerTest" time="1.019">
+    <system-out><![CDATA[11:57:38.179 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.itsf.test.SubscriptionControllerTest]: SubscriptionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:57:38.323 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.itsf.test.ItsftestApplication for test class com.itsf.test.SubscriptionControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:38.898Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:38.901Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:39.964Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:40.024Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:40.581Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:40.634Z  INFO 4468 --- [itsf-test] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-20T11:57:40.666Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:40.887Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:40.911Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-20T11:57:41.108Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:41.110Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-20T11:57:41.134Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:42.121Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:42.176Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:42.514Z  INFO 4468 --- [itsf-test] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-20T11:57:43.097Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:43.469Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:43.526Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:43.526Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:43.529Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-20T11:57:43.554Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 5.058 seconds (process running for 6.456)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+Hibernate: 
+    insert 
+    into
+        subscription_option
+        (name, subscription_id, subscription_date, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        distinct s1_0.id,
+        s1_0.client_id,
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    left join
+        subscription_option o1_0 
+            on s1_0.id=o1_0.subscription_id
+2026-03-20T11:57:44.567Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:44.578Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-20T11:57:44.582Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="addMusic_toFixSubscription_shouldFail" classname="com.itsf.test.SubscriptionControllerTest" time="0.061">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:44.653Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:44.653Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:44.879Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:44.892Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:44.998Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:45.001Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:45.005Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:45.006Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-20T11:57:45.007Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:45.007Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-20T11:57:45.008Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:45.088Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:45.094Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:45.227Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:45.385Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:45.414Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:45.414Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:45.415Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-20T11:57:45.430Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.834 seconds (process running for 8.332)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+2026-03-20T11:57:45.490Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:45.493Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-20T11:57:45.494Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="addNetflix_toMobileSubscription_shouldFail" classname="com.itsf.test.SubscriptionControllerTest" time="0.058">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:45.524Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:45.525Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:45.681Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:45.690Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:45.814Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:45.817Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:45.822Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:45.823Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-03-20T11:57:45.824Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:45.824Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-03-20T11:57:45.825Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:45.912Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:45.927Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:46.031Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:46.125Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:46.158Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:46.159Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:46.161Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-03-20T11:57:46.172Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.673 seconds (process running for 9.074)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+2026-03-20T11:57:46.229Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:46.232Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-03-20T11:57:46.233Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="addMusic_toMobileSubscription_shouldSucceed" classname="com.itsf.test.SubscriptionControllerTest" time="0.081">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:46.280Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:46.281Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:46.437Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:46.444Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:46.525Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:46.528Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:46.532Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:46.532Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-03-20T11:57:46.534Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:46.534Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-03-20T11:57:46.535Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:46.612Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:46.625Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:46.801Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:46.877Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:46.897Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:46.897Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:46.897Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-03-20T11:57:46.906Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.667 seconds (process running for 9.808)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+Hibernate: 
+    insert 
+    into
+        subscription_option
+        (name, subscription_id, subscription_date, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        distinct s1_0.id,
+        s1_0.client_id,
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    left join
+        subscription_option o1_0 
+            on s1_0.id=o1_0.subscription_id
+2026-03-20T11:57:46.983Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:46.988Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-03-20T11:57:46.989Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="getAllSubscriptions_shouldReturnCreatedSubscriptions" classname="com.itsf.test.SubscriptionControllerTest" time="0.056">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:47.017Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:47.017Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:47.165Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:47.171Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:47.262Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:47.265Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:47.272Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:47.273Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-03-20T11:57:47.275Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:47.275Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-03-20T11:57:47.275Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:47.338Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:47.348Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:47.458Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:47.547Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:47.564Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:47.564Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:47.565Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-03-20T11:57:47.573Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.581 seconds (process running for 10.475)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        distinct s1_0.id,
+        s1_0.client_id,
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    left join
+        subscription_option o1_0 
+            on s1_0.id=o1_0.subscription_id
+2026-03-20T11:57:47.626Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:47.629Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-03-20T11:57:47.631Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="addOption_toNonExistentSubscription_shouldReturn404" classname="com.itsf.test.SubscriptionControllerTest" time="0.023">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:47.662Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:47.662Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:47.803Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:47.808Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:47.882Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:47.884Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:47.888Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:47.888Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-03-20T11:57:47.889Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:47.890Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-03-20T11:57:47.890Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:47.961Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:47.969Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:48.067Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:48.157Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:48.175Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:48.175Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:48.175Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-03-20T11:57:48.182Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.545 seconds (process running for 11.084)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+2026-03-20T11:57:48.204Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:48.206Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-03-20T11:57:48.207Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="getAllSubscriptions_shouldReturnEmptyList" classname="com.itsf.test.SubscriptionControllerTest" time="0.029">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:48.234Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:48.234Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:48.359Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:48.364Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:48.441Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:48.443Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:48.447Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:48.448Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-03-20T11:57:48.449Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:48.449Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-03-20T11:57:48.450Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:48.509Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:48.519Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:48.605Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:48.682Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:48.699Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:48.699Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:48.700Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-20T11:57:48.707Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.496 seconds (process running for 11.609)
+Hibernate: 
+    select
+        distinct s1_0.id,
+        s1_0.client_id,
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    left join
+        subscription_option o1_0 
+            on s1_0.id=o1_0.subscription_id
+2026-03-20T11:57:48.732Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:48.736Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-03-20T11:57:48.738Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="createSubscription_shouldReturn201" classname="com.itsf.test.SubscriptionControllerTest" time="0.042">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:48.773Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:48.774Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:48.897Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:48.902Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:48.972Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:48.974Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:48.978Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:48.979Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-03-20T11:57:48.980Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn70: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:48.980Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-03-20T11:57:48.981Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:49.058Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:49.070Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:49.165Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:49.244Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:49.261Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:49.261Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:49.262Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-20T11:57:49.272Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.531 seconds (process running for 12.174)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+2026-03-20T11:57:49.311Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:49.314Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-03-20T11:57:49.317Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="addDuplicateOption_shouldFail" classname="com.itsf.test.SubscriptionControllerTest" time="0.069">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:49.348Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:49.349Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:49.471Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:49.476Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:49.545Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:49.547Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:49.551Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:49.551Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-03-20T11:57:49.552Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn80: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:49.552Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-03-20T11:57:49.553Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:49.606Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:49.621Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:49.706Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:49.799Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:49.820Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:49.821Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:49.822Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-20T11:57:49.832Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.511 seconds (process running for 12.734)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+Hibernate: 
+    insert 
+    into
+        subscription_option
+        (name, subscription_id, subscription_date, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+2026-03-20T11:57:49.898Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:49.902Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-03-20T11:57:49.904Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="addNetflix_toFiberSubscription_shouldSucceed" classname="com.itsf.test.SubscriptionControllerTest" time="0.047">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:49.936Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:49.937Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:50.062Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:50.068Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:50.158Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:50.160Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:50.163Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:50.164Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-03-20T11:57:50.165Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection conn90: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:50.165Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-03-20T11:57:50.165Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:50.228Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:50.233Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:50.325Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:50.405Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:50.421Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:50.421Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:50.422Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-20T11:57:50.428Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.521 seconds (process running for 13.33)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+Hibernate: 
+    insert 
+    into
+        subscription_option
+        (name, subscription_id, subscription_date, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        distinct s1_0.id,
+        s1_0.client_id,
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    left join
+        subscription_option o1_0 
+            on s1_0.id=o1_0.subscription_id
+2026-03-20T11:57:50.474Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:50.475Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-03-20T11:57:50.477Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="addHd_withNetflixAlreadyPresent_shouldSucceed" classname="com.itsf.test.SubscriptionControllerTest" time="0.048">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:50.503Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:50.503Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:50.612Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:50.617Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:50.679Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:50.681Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:50.685Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:50.685Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-03-20T11:57:50.687Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection conn100: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:50.687Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-03-20T11:57:50.688Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:50.753Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:50.760Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:50.847Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:50.909Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:50.924Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:50.924Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:50.925Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-20T11:57:50.931Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.451 seconds (process running for 13.833)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+Hibernate: 
+    insert 
+    into
+        subscription_option
+        (name, subscription_id, subscription_date, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+Hibernate: 
+    insert 
+    into
+        subscription_option
+        (name, subscription_id, subscription_date, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        distinct s1_0.id,
+        s1_0.client_id,
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    left join
+        subscription_option o1_0 
+            on s1_0.id=o1_0.subscription_id
+2026-03-20T11:57:50.977Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:50.979Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-03-20T11:57:50.980Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="addRoaming_toFixSubscription_shouldFail" classname="com.itsf.test.SubscriptionControllerTest" time="0.039">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:51.003Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:51.003Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:51.114Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:51.118Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:51.180Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:51.182Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:51.185Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:51.185Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2026-03-20T11:57:51.186Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection conn110: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:51.186Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2026-03-20T11:57:51.187Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:51.242Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:51.247Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:51.313Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:51.400Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:51.415Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:51.416Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:51.416Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-03-20T11:57:51.423Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.441 seconds (process running for 14.325)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+2026-03-20T11:57:51.460Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:51.461Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2026-03-20T11:57:51.464Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="addRoaming_toFiberSubscription_shouldFail" classname="com.itsf.test.SubscriptionControllerTest" time="0.043">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:51.487Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:51.488Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:51.598Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:51.605Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:51.675Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:51.678Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:51.681Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:51.682Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2026-03-20T11:57:51.685Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection conn120: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:51.685Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2026-03-20T11:57:51.685Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:51.736Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:51.740Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:51.804Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:51.871Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:51.886Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:51.887Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:51.887Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-03-20T11:57:51.893Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.427 seconds (process running for 14.795)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+2026-03-20T11:57:51.936Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:51.938Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2026-03-20T11:57:51.939Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="addHd_withoutNetflix_shouldFail" classname="com.itsf.test.SubscriptionControllerTest" time="0.045">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:51.964Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:51.965Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:52.074Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:52.079Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:52.142Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:52.144Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:52.148Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:52.148Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2026-03-20T11:57:52.149Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection conn130: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:52.149Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2026-03-20T11:57:52.150Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:52.194Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:52.202Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:52.264Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:52.354Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:52.369Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:52.369Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:52.370Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-20T11:57:52.376Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.435 seconds (process running for 15.278)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+2026-03-20T11:57:52.419Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:52.420Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2026-03-20T11:57:52.422Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="addMusic_toFiberSubscription_shouldSucceed" classname="com.itsf.test.SubscriptionControllerTest" time="0.042">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-20T11:57:52.446Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Starting SubscriptionControllerTest using Java 17.0.18 with PID 4468 (started by runner in /home/runner/work/ITSF_Test/ITSF_Test)
+2026-03-20T11:57:52.447Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T11:57:52.558Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T11:57:52.563Z  INFO 4468 --- [itsf-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-20T11:57:52.630Z  INFO 4468 --- [itsf-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-20T11:57:52.632Z  INFO 4468 --- [itsf-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-20T11:57:52.636Z  INFO 4468 --- [itsf-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T11:57:52.636Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2026-03-20T11:57:52.637Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection conn140: url=jdbc:h2:mem:itsfdb user=SA
+2026-03-20T11:57:52.637Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2026-03-20T11:57:52.637Z  WARN 4468 --- [itsf-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-20T11:57:52.685Z  INFO 4468 --- [itsf-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+Hibernate: 
+    create table subscription (
+        subscription_date date not null,
+        client_id bigint not null,
+        id bigint generated by default as identity,
+        type varchar(255) not null check (type in ('FIX','MOBILE','FIBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table subscription_option (
+        subscription_date date not null,
+        id bigint generated by default as identity,
+        subscription_id bigint not null,
+        name varchar(255) not null check (name in ('ROAMING','NETFLIX','MUSIC','HD')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists subscription_option 
+       add constraint FK5ryt33e9aaajkg4k925pq1r59 
+       foreign key (subscription_id) 
+       references subscription
+2026-03-20T11:57:52.693Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T11:57:52.763Z  WARN 4468 --- [itsf-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T11:57:52.834Z  INFO 4468 --- [itsf-test] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:itsfdb'
+2026-03-20T11:57:52.848Z  INFO 4468 --- [itsf-test] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-20T11:57:52.848Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-20T11:57:52.849Z  INFO 4468 --- [itsf-test] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-20T11:57:52.855Z  INFO 4468 --- [itsf-test] [           main] c.itsf.test.SubscriptionControllerTest   : Started SubscriptionControllerTest in 0.43 seconds (process running for 15.757)
+Hibernate: 
+    insert 
+    into
+        subscription
+        (client_id, subscription_date, type, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.client_id,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date 
+    from
+        subscription_option o1_0 
+    where
+        o1_0.subscription_id=?
+Hibernate: 
+    insert 
+    into
+        subscription_option
+        (name, subscription_id, subscription_date, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        distinct s1_0.id,
+        s1_0.client_id,
+        o1_0.subscription_id,
+        o1_0.id,
+        o1_0.name,
+        o1_0.subscription_date,
+        s1_0.subscription_date,
+        s1_0.type 
+    from
+        subscription s1_0 
+    left join
+        subscription_option o1_0 
+            on s1_0.id=o1_0.subscription_id
+2026-03-20T11:57:52.895Z  INFO 4468 --- [itsf-test] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists subscription cascade 
+Hibernate: 
+    drop table if exists subscription_option cascade 
+2026-03-20T11:57:52.897Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2026-03-20T11:57:52.898Z  INFO 4468 --- [itsf-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+]]></system-out>
+  </testcase>
+</testsuite>
